@@ -50,7 +50,6 @@ const enableboxes = () => {
     }
 }
 
-
 const showWinner = (winner) => {
     msg.innerText = `Winner is ${winner}`;
     msgcont.classList.remove("hide");
