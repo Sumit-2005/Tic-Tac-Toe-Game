@@ -63,7 +63,7 @@ body {
     color: #E1F0C4;
 }
 
-.hide {
+.hiden {
     display: none;
 }
 
@@ -74,4 +74,8 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 3vmin;
+}
+
+.hello {
+    display: none;
 }

@@ -3,6 +3,7 @@ let resetBtn = document.querySelector("#reset");
 let newgame = document.querySelector("#newgame");
 let msg = document.querySelector("#win");
 let msgcont = document.querySelector(".msg-container");
+let hello = document.querySelector(".hello");
 
 let turnO = true;
 let win = [
@@ -19,7 +20,8 @@ let win = [
 const resetGame = () => {
     turnO = true;
     enableboxes();
-    msgcont.classList.add("hide");
+    hello.classList.add("hello");
+    console.log(msgcont.classList);
 }
 
 boxes.forEach((box) => {
@@ -52,7 +54,7 @@ const enableboxes = () => {
 
 const showWinner = (winner) => {
     msg.innerText = `Winner is ${winner}`;
-    msgcont.classList.remove("hide");
+    hello.classList.remove("hello");
     disableboxes();
 }
 
@@ -68,7 +70,6 @@ const checkWinner = () => {
                 showWinner(pos1Val);
             }
         }
-
     }
 };
 
