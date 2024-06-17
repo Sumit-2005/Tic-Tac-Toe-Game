@@ -21,7 +21,6 @@ const resetGame = () => {
     turnO = true;
     enableboxes();
     hello.classList.add("hello");
-    console.log(msgcont.classList);
 }
 
 boxes.forEach((box) => {
@@ -34,7 +33,6 @@ boxes.forEach((box) => {
             turnO = true;
         }
         box.disabled = true;
-
         checkWinner();
     })
 });
@@ -66,7 +64,6 @@ const checkWinner = () => {
 
         if(pos1Val != "" && pos2Val!= "" && pos3Val != ""){
             if(pos1Val === pos2Val && pos1Val === pos3Val){
-                console.log("Winner");
                 showWinner(pos1Val);
             }
         }
