@@ -1,1 +1,1 @@
-# Tic-Tac-Toe-Game
+A simple tick-tac-toe game using HTML, CSS3 and Javascript.
